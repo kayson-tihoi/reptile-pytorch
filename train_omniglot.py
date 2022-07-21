@@ -74,7 +74,7 @@ check_dir = os.path.join(run_dir, 'checkpoint')
 # By default, continue training
 # Check if args.json exists
 if os.path.exists(args_filename):
-    print(Attempting to resume training. (Delete {} to start over)'.format(args.logdir))
+    print('Attempting to resume training. (Delete {} to start over)'.format(args.logdir))
     # Resuming training is incompatible with other checkpoint
     # than the last one in logdir
     assert args.checkpoint == '', 'Cannot load other checkpoint when resuming training.'
