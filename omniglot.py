@@ -162,12 +162,12 @@ if __name__ == '__main__':
                                        transform_image=transform_image)
 
     train, test = split_omniglot(meta_omniglot)
-    print 'all', len(meta_omniglot)
-    print 'train', len(train)
-    print 'test', len(test)
+    print('all', len(meta_omniglot))
+    print('train', len(train))
+    print('test', len(test))
 
     base_task = train.get_random_task()
-    print 'base_task', len(base_task)
-    print 'ask once', base_task[0]
-    print 'ask twice', base_task[0]
+    print('base_task', len(base_task))
+    print('ask once', base_task[0])
+    print('ask twice', base_task[0])
 
